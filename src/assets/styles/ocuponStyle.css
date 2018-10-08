@@ -1,0 +1,111 @@
+.headShowPart-oc{
+  overflow: hidden;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 25px;
+}
+.container-oc{
+  padding:20px 25px;
+}
+.inputBox-oc{
+  height: 28px;
+  line-height: 28px;
+}
+.inputLable-oc{
+  display: inline-block;
+  font-size: 12px;
+  width:65px!important;
+  text-align:right;
+  color: #666;
+}
+.inputControl-oc{
+  width: 130px!important;
+  padding: 0;
+  height: 28px;
+  display: inline-block;
+}
+#grant .el-date-editor--date{
+  width:131px!important;
+}
+#grant .el-date-editor--year{
+  width:131px!important;
+}
+#transfer .el-date-editor--date{
+  width:131px!important;
+}
+#transfer .el-date-editor--year{
+  width:131px!important;
+}
+#used .el-date-editor--date{
+  width:131px!important;
+}
+#used .el-date-editor--year{
+  width:131px!important;
+}
+#balancePay .el-date-editor--date{
+  width:131px!important;
+}
+.dialog-container{
+  border-bottom: solid thin #dcdfe6;
+  padding-top:15px;
+}
+.dialog-container h3{
+  color: #4dbe61;
+  font-size: 14px;
+  border-bottom: solid thin #dcdfe6;
+  margin-bottom:20px;
+  border-top:none;
+  margin-top:0;
+}
+#transfer .dialog-container .el-date-editor--date{
+  width:160px!important;
+}
+#used .el-button--text{
+  padding:0!important;
+}
+#used .posi .el-input input{
+  max-width:350px!important;
+  width:350px!important;
+}
+#used .posi .el-input__suffix{
+  right:-219px;
+}
+.cusLabel{
+  width:145px;
+  display:inline-block;text-align:right;
+  font-size:12px;
+}
+.cus-row{
+  padding-bottom:20px;
+}
+#detail .el-input{
+  max-width:250px!important;
+  width:175px!important;
+}
+#detail .lang .el-input{
+  max-width:500px!important;
+  width:451px!important;
+}
+#detail .lang .el-input__inner{
+  max-width:500px!important;
+}
+#detail .headShowPart-oc{
+  padding:10px 25px;
+}
+#grant .dialogBtnBox{
+  text-align:right;
+}
+#transfer .dialogBtnBox{
+  text-align:right;
+}
+#balancePay .el-input input{
+  height:28px!important;
+}

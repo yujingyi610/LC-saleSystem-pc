@@ -1,0 +1,30 @@
+/************table*****************/
+#price .el-input__inner{
+    font-size: 12px;
+}
+#price .el-table tbody tr{
+    cursor: pointer;
+}
+
+#price .inline-input input{
+    text-align: center;
+    background: transparent;
+}
+/************dialog***********************/
+#price .el-dialog{
+    width: 900px;
+}
+#price .el-dialog__title {
+    line-height: 24px;
+    font-size: 14px;
+    color: #404040;
+    font-weight: 900;
+}
+#price .el-dialog__header {
+    padding: 10px 25px;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 24px;
+    font-size: 14px;
+    color: #404040;
+    font-weight: 900;
+}

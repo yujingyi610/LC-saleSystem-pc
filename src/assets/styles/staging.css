@@ -1,0 +1,230 @@
+#staging{
+    /* background: #F0F0F2; */
+    padding: 0;
+}
+#staging .padding{
+    box-sizing: border-box;
+    padding: 8px 24px;
+    border-bottom: 1px solid #E5E5E5;
+}
+#mortgage .padding{
+  box-sizing: border-box;
+  padding: 8px 24px;
+  border-bottom: 1px solid #E5E5E5;
+  background-color:#fff;
+}
+#staging .el-aside{
+    background: #fff;
+    overflow: initial;
+}
+#staging .left{
+    overflow: auto;
+    position: absolute;
+    top: 65px;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+}
+#staging .right{
+    overflow: auto;
+    position: absolute;
+    left: 220px;
+    top: 20px;
+    bottom: 0;
+    right:0;
+    margin-left: 20px;
+    border-radius: 4px;
+}
+.space_bottom{
+    padding-bottom: 200px;
+}
+#staging .el-pagination{
+    display: inline-block;
+    margin-left: -263px;
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+}
+
+#staging .el-input__inner{
+    font-size: 12px;
+}
+
+
+#staging .el-table tbody tr{
+    cursor: pointer;
+}
+
+#staging .inline-input input{
+    text-align: center;
+    background: transparent;
+}
+#staging .el-table .cell{
+    line-height: 23px;
+}
+/**************弹窗样式*******************/
+#staging .el-dialog{
+    width: 800px;
+}
+#staging .width870 .el-dialog{
+    width: 870px;
+}
+#staging .el-dialog__title {
+    line-height: 24px;
+    font-size: 14px;
+    color: #404040;
+    font-weight: 900;
+}
+.el-dialog__header {
+    padding: 10px 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+#staging .el-dialog__body .el-form-item__label{
+    line-height: 26px;
+}
+#staging .el-dialog__body .el-form-item__content{
+    line-height: 26px;
+}
+#staging .el-dialog__body .el-input input{
+    width: 174px;
+}
+#staging .el-textarea{
+    width: 600px;
+}
+/* #staging .dialog-footer .el-button{
+    padding: 8px 15px 7px;
+}
+#staging .dialog-footer .el-button.el-button--success{
+    padding: 8px 15px 7px;
+} */
+#staging .cellItem{
+    /* display: inline-block; */
+    width: 74px;
+    height: 32px;
+    border: 1px solid #666;
+    margin-right: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    /* padding: 8px 13px; */
+    position: relative;
+    float: left;
+}
+#staging .cell span.cellItem:last-child{
+    margin: 0;
+}
+#staging .cellItem .cell_con{
+    /* width: 65px;
+    height: 20px; */
+    text-align: center;
+    line-height: 31px;
+    border-radius: 3px;
+    display: inline-block;
+}
+#staging .cellItem .cell_con.cell_name{
+    color: #4DBE61;
+    text-decoration: underline;
+}
+#staging .redactHouseInfo .cellItem .cell_con.cell_name{
+    color: #4DBE61;
+    text-decoration-color: #4DBE61;
+}
+#staging .cellItem .cell_con.cell_landscape{
+    color: #8F94DE;
+    background-color: rgba(237, 238, 254, 1);
+    border: 1px solid rgba(143, 148, 222, 1);
+}
+#staging .cellItem .cell_con.cell_orientation{
+    color: #00A0E9;
+    background-color: rgba(227, 244, 251, 1);
+    border: 1px solid rgba(0, 160, 233, 1);
+
+}
+#staging .cellItem .cell_con.cell_houseType{
+    color: #4DBE61;
+    background-color: rgba(229, 249, 233, 1);
+    border: 1px solid rgba(77, 190, 97, 1);
+}
+#staging .cellItem .el-checkbox{
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* top: -5px; */
+}
+#staging .cellItem .el-checkbox__label{
+    padding-left: 0;
+}
+#staging .cellItem .el-checkbox__input{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+#staging .cellItem .el-radio__label{
+    padding-left: 0;
+}
+#mainPage .redactHouseInfo .el-select .el-input input{
+    height: 20px;
+    width: 56px;
+}
+#mainPage .redactHouseInfo .all-info .el-select .el-input input{
+    height: 28px;
+}
+#mainPage .redactHouseInfo .el-input--suffix .el-input__inner {
+    padding-right: 0px;
+    padding-left: 5px;
+}
+/* #mainPage .redactHouseInfo .cellItem{
+    width: 149px;
+} */
+
+#staging .table_header_bgColor .el-table thead tr th{
+    background: rgb(247, 247, 247);
+}
+#staging .cellItem .el-radio{
+    width: 100%;
+}
+#staging .cellItem .el-radio .el-radio__input{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#staging .copyForm .cellItem{
+    padding: 0;
+}
+#staging .el-radio__label{
+    font-size: 12px;
+}
+#staging .copyForm .el-table .cell{
+    text-overflow: initial;
+}
+
+/* #staging .importRoom .el-upload {
+    text-align: start;
+    float: left;
+    width: 100%;
+    margin-left: 5px;
+} */
+#staging .importRoom .el-upload-list {
+    width: 250px;
+    /* float: left; */
+}
+#mainPage .redactHouseInfo .all-info .el-select .el-input input{
+    width: initial;
+}
+#staging .el-main{
+    padding: 0;
+    overflow-x:hidden;
+}
+#staging .partItem_card.el-card{
+    box-shadow: none;
+}
+#staging .partItem_card .el-card__body{
+    padding: 0;
+}
+#staging .partItem_card .el-card__header{
+    background: #f7f7f7;
+    font-weight: 900;
+}
+/* #staging .el-card{
+    box-shadow: none;
+    border: 0;
+} */

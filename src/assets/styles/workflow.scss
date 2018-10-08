@@ -1,0 +1,139 @@
+body{
+    font-size: 14px;
+    color: #404040;
+}
+#workflow {
+    // background: #fff;
+    .el-steps--vertical {
+        margin-left: 25px;
+    }
+    .title{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 900;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid rgba(229,229,229,1);
+    }
+    .el-step__icon{
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        top: 1px;
+    }
+    .el-step__description {
+        margin-top: -10px;
+        width: 100%;
+    }
+    .el-step__title {
+        font-size: 14px;
+    }
+    .el-step.is-vertical .el-step__line{
+        width: 1px;
+        left: 9px;
+        top: 4px;
+        bottom: -4px;  
+    }
+    .el-step__icon-inner{
+        font-weight: 100;
+    }
+    .el-step__line-inner{
+        border: 0;
+        border-left: 1px solid #d8d8d8;
+    }
+    .el-step__icon.is-text{
+        border: 1px solid;
+        color: #808080;
+    }
+    .el-step__head.is-finish {
+        color: #4DBE61;
+        border-color: #4DBE61;
+    }
+    .el-step__title.is-finish{
+        color: #404040;
+        // color: #4DBE61;
+    }
+    .el-step__description.is-finish {
+        color: #404040;
+    }
+    // .el-step__description.is-finish::after {
+    //     content: '办理中';
+    //     color: #F5A623;
+    //     margin-left: 18px;
+    // }
+    .time{
+        position: absolute;
+        top: 43px;
+        left: 34px;
+    }
+    .el-step__head.is-success{
+        color: #404040;
+        border-color: #404040
+    }
+    .el-step__title.is-success {
+        color: #404040;
+        
+    }
+    .el-step__title{
+        font-weight: 900;
+    }
+    .el-step__description.is-success{
+        color: #404040;
+        width: 100%;
+    }
+    
+    .title_time{
+        position: absolute;
+        right: 5px;
+        top: 3px;
+        color: #808080;
+    }
+    
+    .finish::after{
+        content: attr(data-attr);
+        color: #404040;
+        position: absolute;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .btn_wrap{
+        text-align: center;
+    }
+    .el-button{
+        padding: 0;
+        width: 78px;
+        height: 28px;
+        text-align: center;
+        line-height: 28px;
+        font-size: 12px;
+    }
+    .el-button:hover{
+        color: #4DBE61;
+        border-color: #c6e2ff;
+        background-color: #ecf5ff;
+    }
+    .el-button.el-button--success{
+        background: #4DBE61;
+        border-color: #4DBE61;
+    }
+    .el-button.el-button--success:hover{
+        background: #4DBE61;
+        border-color: #4DBE61;
+        color: #ffffff;
+    }
+    .el-button--text.el-button{
+        color: #4DBE61;
+    }
+    .el-button--text.el-button:hover{
+        color: #4DBE61;
+        border: none;
+        background-color: transparent;
+    }
+    .assigneeDeptTree{
+        padding-left: 20px; border-bottom: 1px solid #e5e5e5; padding-bottom: 20px; color: #808080
+    }
+    .el-card{
+        box-shadow: none;
+        margin-bottom: 20px;
+    }
+}

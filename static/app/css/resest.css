@@ -1,0 +1,148 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, cite, em, font, img, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {margin: 0; padding: 0}
+body{background-color:#f6f6f6}
+ol, ul {list-style: none}
+i,em,cite{font-style: normal}
+a img {border: 0}
+a{text-decoration:none}
+img {vertical-align: middle}
+em {font-style: normal}
+.ov-hide{overflow:hidden}
+.fl{float:left}
+.fr{float:right}
+.text-red{color:#d40000}
+body{
+	
+}
+.header{
+	padding: 1.5rem 1rem;
+	height: 15rem;
+	background: white;
+}
+.header>span,.action>span{
+	font-size: 1.1rem;
+	color: #1A1A1A;
+	font-weight: 500;
+}
+
+.header>ul,.action>ul{
+	float: right;
+	width: 70%;
+	box-sizing: border-box;
+}
+.header>ul button,.action>ul button{
+	background: white;
+	text-align: center;
+	float: left;
+	height: 1.6rem;
+	color: #25AE50;
+	width: 23%;
+	border: 1px solid #25AE50;
+	line-height: 1.6rem;
+	outline:none!important;
+}
+.header>ul button:first-child,.action>ul button:first-child{
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.header>ul button:last-child,.action>ul button:last-child{
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#content{
+	margin-top: 2rem ;
+}
+
+#content ul{
+	box-sizing: border-box;
+}
+
+
+#content ul li{
+	float: left;
+	width: 33%;
+	height: 5rem;
+	text-align: center;
+}
+
+#content ul li span{
+	display: block;
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+.active{
+	background: #25AE50!important;
+	color: white!important;
+}
+
+.action{
+	padding: 1.5rem 1rem;
+	background: white;
+	margin-top: 2rem;
+	position: relative
+}
+
+.action_nav{
+	margin-top: 1.5rem;
+	height: 3rem;
+	width: 100%;
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.action_nav ul{
+	box-sizing: border-box;
+	display: flex;
+}
+.action_nav ul li{
+	float: left;
+	flex: 1;
+	text-align: center;
+	line-height:3rem ;
+}
+.action_nav ul li.hover span{
+	display: inline-block;
+	height: 2.9rem;
+	border-bottom: 2px solid #25AE50;
+}
+
+
+iframe{
+	border: none;
+	width: 100%;
+	height: 70rem;
+}
+
+#box{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.7;
+	left: 0;
+	top: 0;
+}
+
+#ajaxbar1{
+	margin-top: 14rem!important;
+}
+
+.ajaxbarC{
+	font-size: 0.3rem;
+	
+	text-align: center;
+	color: white;
+}
+
+/*广告屏蔽*/
+body >iframe{
+	display: none;
+	opacity: 0;
+}
+
+div#tod ~ div{
+	display: none;
+	opacity: 0;
+}

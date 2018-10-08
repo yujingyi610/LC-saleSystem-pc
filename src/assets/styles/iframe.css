@@ -1,0 +1,14 @@
+#iframe1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+}
+#iframe2{
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    height: 300px;
+}

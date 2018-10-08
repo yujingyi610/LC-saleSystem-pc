@@ -1,0 +1,457 @@
+body,ul,li,ol,dl,dd,dt,table,tr,td,tbody,tfoot,thead,p,h1,h2,h3,h4,h5,h6,hr,input,form,iframe,textarea{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style-type:none;
+}
+a{
+    color:#333;
+    text-decoration:none;
+}
+a:hover,a:active,a:focus,a:visited{
+    /*color:#B1B0B0;*/
+    text-decoration:none;
+}
+a img{
+    border:none;
+    vertical-align: middle;
+}
+body{
+    font-size:14px;
+    color:#666;
+}
+input:focus{
+    outline:none;
+}
+.pagebox{
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.banner{
+    border-top: 2px solid #d6d6d6;
+    border-bottom: 2px solid #d6d6d6;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+.navSortBy {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+.navSortBy div.colRed {
+    color: #c70000;
+}
+.navSortBy div {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    line-height: 1.6rem;
+    cursor: pointer;
+}
+.navSortBy div span{
+    position:relative;width: 1.5rem;height:1.8rem;display: inline-block;margin-left:0.3rem;
+}
+.navSortBy span .tip{
+    width:1.5rem;height:1.5rem;position:absolute;top: 0.5rem;left:-0.2rem;background-image: url(../img/content/icon/downgray.png);
+}
+.navSortBy span i.on{
+    background-image: url(../img/content/icon/downred.png);
+}
+sup{
+    position:absolute;top: 0.3rem;left:0;width:1rem;height:1rem;
+}
+sub{
+    position:absolute;bottom: -0.35rem;left:0;width:1rem;height:1rem;
+}
+.navSortBy div:last-child sup i{
+    background-image: url(../img/content/icon/paixu_gery_top.png);
+}
+.navSortBy div:last-child sup i.on{
+    background-image: url(../img/content/icon/paixu_red_top.png);
+}
+.navSortBy div:last-child sub i{
+    background-image: url(../img/content/icon/paixu_gery_bottom.png);
+}
+.navSortBy div:last-child sub i.on{
+    background-image: url(../img/content/icon/paixu_red_bottom.png);
+}
+.navSortBy div i {
+    width:1rem;height:1rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80% auto;
+    -webkit-background-size: 80% auto;
+    -moz-background-size: 80% auto;
+    -o-background-size: 80% auto;
+}
+.bookList01{
+    overflow: auto;
+}
+.bookList01 img{
+    width: 100%;
+    height: auto;
+}
+ul.bookList01 li {
+    overflow: auto;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+ul.bookList01 .bookImg01 {
+    width: 9.8rem;
+    height: 9.8rem;
+    max-width: 40%;
+    overflow: hidden;
+    float: left;
+    margin-right: 1rem;
+    text-align: center;
+}
+ul.bookList01 dl {
+    float: left;
+    width: 55%;
+}
+ul.bookList01 dl dt {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: .5rem;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+ul.bookList01 dl dd:nth-of-type(1) {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    margin-bottom: 2rem;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+ul.bookList01 dl dd:nth-of-type(2) {
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+}
+ul.bookList01 dl dd:nth-of-type(2) span:nth-of-type(1) {
+    color: #c70000;
+    font-size: 1.7rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+ul.bookList01 dl dd:nth-of-type(2) span:nth-of-type(2) {
+    display: inline-block;
+    color: #a0a0a0;
+    font-size: 1.4rem;
+    text-decoration: line-through;
+}
+ul.bookList01 dl dd:nth-of-type(3) {
+    line-height: 2rem;
+}
+ul.bookList01 dl dd:nth-of-type(3)>i:nth-of-type(1) {
+    background-image: url(../img/content/icon/shoppingCart.svg);
+    background-position: left center;
+}
+ul.bookList01 dl dd:nth-of-type(3) i {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2rem;
+    height: 2rem;
+    background-size: 80% auto;
+    -webkit-background-size: 80% auto;
+    -moz-background-size: 80% auto;
+    -o-background-size: 80% auto;
+    float: left;
+    margin-right: .5rem;
+}
+ul.bookList01 dl dd:nth-of-type(3) i:nth-of-type(2) {
+    background-image: url(../img/content/icon/Love.svg);
+}
+ul.bookList01 dl dd:nth-of-type(3) i:nth-of-type(2).hover {
+    background-image: url(../img/content/icon/Love-S.svg);
+}
+
+ul.bookList01 dl dd:nth-of-type(3) span {
+    text-align: right;
+    display: inline-block;
+    line-height: 2rem;
+    color: #a0a0a0;
+}
+ul.bookList01 dl dd:nth-of-type(3) span i {
+    background-image: url(../img/content/icon/shop.svg);
+    margin-right: .2rem;
+    background-position: right center;
+}
+
+
+.showMore {
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+.hide {
+    display: none;
+}
+/*�ص�����*/
+a.backTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+}
+a {
+    background: 0 0;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #08c;
+}
+a.backTop img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.navGroBuy {
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow: auto;
+    margin-bottom: 1rem;
+}
+.navGroBuy ul {
+    width: 50rem;
+    min-width: 100%;
+}
+.navGroBuy li.hover {
+    color: #c70000;
+}
+.navGroBuy li {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+}
+.title01 {
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.title01 dl {
+    color: #c70000;
+    line-height: 1.9rem;
+    height: 1.9rem;
+}
+.title01 dt i {
+    display: inline-block;
+    width: 1.9rem;
+    height: 1.9rem;
+    line-height: 1.9rem;
+    font-style: normal;
+    border: 1px solid #c70000;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+.title01 dt {
+    font-size: 1rem;
+    text-align: left;
+    float: left;
+}
+.title01 dd {
+    float: right;
+}
+.title01 dd i {
+    width: 1.9rem;
+    height: 1.9rem;
+    display: inline-block;
+    background: url(../img/content/icon/ArrowD.svg) center center/100% auto no-repeat;
+    transform: rotate(-90deg);
+}
+.bookList02 {
+    width: 100%;
+    padding: 0 1rem;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: -1px;
+    overflow: auto;
+}
+.bookList02 ul {
+    min-width: 100%;
+}
+.bookList02 li {
+    width: 7.5rem;
+    display: inline-block;
+    text-align: center;
+    padding: .5rem .2rem;
+    border-right: 1px solid #eee;
+}
+.bookList02 li img {
+    width: 80%;
+    height: auto;
+    margin-bottom: .5rem;
+}
+.bookList02 li h3 {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: .5rem;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 6rem;
+}
+.bookList02 li span {
+    font-size: 1rem;
+    display: inline-block;
+    width: 80%;
+    line-height: 1.4rem;
+    text-align: center;
+    color: #fff;
+    background-color: #c70000;
+    border-radius: .7rem;
+}
+.title02 h2 {
+    font-size: 1rem;
+    color: #c70000;
+    line-height: 1.4rem;
+    text-align: center;
+    padding: .5rem;
+    font-weight: 600;
+}
+.title02 h2 i {
+    display: inline-block;
+    width: 1.4rem;
+    font-style: normal;
+    border: 1px solid #c70000;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+.bookList03 li {
+    overflow: auto;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.bookImg03 {
+    width: 9.8rem;
+    height: 9.8rem;
+    max-width: 35%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-right: 1rem;
+    text-align: center;
+}
+.bookImg03 i.GroBuyStatus {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+    background: url(../img/content/icon/GroBuyico02.png) center center/80% auto no-repeat;
+}
+.bookImg03 img {
+    width: auto;
+    height: 100%;
+}
+dl.bookInfo03 {
+    float: left;
+    width: 60%;
+}
+dl.bookInfo03 dt {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+dl.bookInfo03 dt i {
+    display: inline-block;
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    background: url(../img/content/icon/GroBuyico01.png) left center/80% auto no-repeat;
+}
+dl.bookInfo03 dd:nth-of-type(1) {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 1.7rem;
+}
+dl.bookInfo03 dd:nth-of-type(2) {
+    line-height: 1.7rem;
+    margin-bottom: .5rem;
+}
+dl.bookInfo03 dd:nth-of-type(2) span:nth-of-type(1) {
+    color: #c70000;
+    font-size: 1.7rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+dl.bookInfo03 dd:nth-of-type(2) span:nth-of-type(2) {
+    display: inline-block;
+    color: #a0a0a0;
+    font-size: 1.4rem;
+    text-decoration: line-through;
+}
+dl.bookInfo03 dd:nth-of-type(3) {
+    line-height: 2rem;
+}
+dl.bookInfo03 dd:nth-of-type(3) i {
+    display: inline-block;
+    background: url(../img/content/icon/renshu.svg) left center/80% auto no-repeat;
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+    float: left;
+}
+dl.bookInfo03 dd:nth-of-type(3) span {
+    display: inline-block;
+    line-height: 2rem;
+    color: #c70000;
+}
+
+.GroBuyCountdown {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 2px solid #c70000;
+    color: #c70000;
+    right: 1rem;
+    bottom: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+.GroBuyCountdown span {
+    font-size: 1rem;
+    line-height: 1rem;
+    display: block;
+}
+.GroBuyCountdown span:nth-of-type(1) {
+    margin-bottom: .3rem;
+}
+

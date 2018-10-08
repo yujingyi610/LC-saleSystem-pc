@@ -1,0 +1,101 @@
+.container-lee:nth-child(1){
+  padding-top:20px;
+  padding-left:25px;
+}
+.container-lee{
+  padding:20px 25px;
+}
+.headShowPart-lee{
+  overflow: hidden;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 25px;
+}
+.inputBox-lee{
+  display:inline-block;
+  height: 28px;
+  line-height: 28px;
+}
+.inputLable-lee{
+  font-size: 12px;
+  color: #666;
+}
+.inputControl-lee{
+  width: 130px;
+  padding: 0;
+  height: 28px;
+}
+.inputControl-lee:focus{
+  border-color:#4dbe61;
+}
+.tabFilter-lee{
+  border:solid thin #dcdfe6;
+  height:50px;
+  margin-bottom:20px;
+  border-radius:5px;
+}
+.tabFilter-lee span{
+  display:inline-block;
+  height:50px;
+}
+.tabInner-lee{
+  margin-right:80px;
+}
+.buildBtnBox-lee{
+  width:100%;
+  text-align:right;
+  padding-top:50px;
+}
+.borderBottom-lee{
+  border-bottom:solid thin;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  outline:none;
+}
+h3{
+  color:#4dbe61;
+  font-size:14px;
+  border-top:solid thin #dcdfe6;
+  margin-top:36px;
+}
+.bottomContainer-lee{
+  border-bottom:solid thin #dcdfe6;
+}
+#bankList .pagingBox .el-input input{
+  width:90px;
+}
+.el-pager li:hover{
+  color:#4dbe61!important;
+}
+.el-pagination button:hover{
+  color:#4dbe61!important;
+}
+.min-head{
+  height:36px;
+  line-height:36px;
+  border-bottom:solid thin #dcdfe6;
+}
+.min-head h3{
+  display:inline-block;
+  color:#4dbe61;
+  font-size:14px;
+  border:none;
+  margin:0;
+  text-indent:15px;
+  line-height:36px;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label{
+  color:#4dbe61!important;
+}
+.el-checkbox__inner:hover{
+  border-color:#4dbe61!important;
+}

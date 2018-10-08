@@ -1,0 +1,230 @@
+#mainPage{
+  font-size: 12px;
+  color: #666;
+  .mt-5{
+    margin-top: 5px;
+  }
+  .mt-10{
+    margin-top: 10px;
+  }
+  .mt-15{
+    margin-top: 15px;
+  }
+  .mt-20{
+    margin-top: 20px;
+  }
+  .mt-30{
+    margin-top: 30px;
+  }
+  .mr-5{
+    margin-right: 5px;
+  }
+  .mr-10{
+    margin-right: 10px;
+  }
+  .mr-20{
+    margin-right: 20px;
+  }
+  .mr-30{
+    margin-right: 30px;
+  }
+  .mb-10{
+    margin-bottom: 10px;
+  }
+  .mb-5{
+    margin-bottom: 5px;
+  }
+  .mb-20{
+    margin-bottom: 20px;
+  }
+  .mb-30{
+    margin-bottom: 30px;
+  }
+  .ml-5{
+    margin-left: 5px;
+  }
+  .ml-10{
+    margin-left: 10px;
+  }
+  .ml-20{
+    margin-left: 20px;
+  }
+  .ml-30{
+    margin-left: 30px;
+  }
+  .pt-15{
+    padding-top: 15px;
+  }
+  .pt-20{
+    padding-top: 20px;
+  }
+  .pd-10{
+    padding: 10px;
+  }
+  .pd-15{
+    padding: 15px;
+  }
+  .fr{
+    float: right;
+  }
+  .fl{
+    float: left;
+  }
+  .clear{
+    clear: both;
+  }
+  .va-middle{
+    vertical-align: middle;
+  }
+  .inline-block{
+    display: inline-block;
+  }
+  .w-174{
+    width: 174px;
+  }
+  .f-6w{
+    font-weight: 600
+  }
+  .transaction-management-page{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 20px;
+    overflow: auto;
+    background-color: #F0F0F2;
+  }
+  .background-m{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F3F3F3;
+    padding: 20px;
+    overflow: auto;
+  }
+  .color-green{
+    color: #4DBE61!important;
+  }
+  .color-red{
+    color: #f56c6c!important;
+  }
+  .color-title{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .color-title-green{
+    font-size: 14px;
+    color: #007440;
+    font-weight: bold;
+  }
+  .hide{
+    display: none;
+  }
+  .of-hidden{
+    overflow: hidden;
+  }
+  .lh-28{
+    line-height: 28px;
+  }
+
+  .ft-18{
+    font-size: 18px;
+  }
+  .ft-20{
+    font-size: 20px;
+  }
+  .fs-12{
+    font-size: 12px;
+    color: #808080;
+  }
+  .fs-14{
+    font-size: 14px;
+  }
+  .fs-17{
+    font-size: 17px;
+  }
+  .border-green{
+    border: 1px solid #4DBE61;
+  }
+  .cursor{
+    cursor: pointer;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .ellipsis{
+    overflow: hidden;  /*溢出隐藏*/
+    text-overflow: ellipsis; /*以省略号...显示*/
+    white-space: nowrap;  /*强制不换行*/
+  }
+  /*整体边框*/
+  .qb{
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+  }
+  //取消整体边框
+  .qbn{
+    border: none
+  }
+  /* 信封样式 */
+  .envelope-box{
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  }
+  .envelope-title{
+    overflow: hidden;
+    padding: 10px 25px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .envelope-content{
+    padding: 20px 25px 17px 25px;
+  }
+  /* 搜索title 样式 */
+  .search-title{
+    overflow: hidden;
+    padding: 20px 25px;
+    padding-top: 0;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  /* element ui 样式 */
+  .el-checkbox__label{
+    font-size: 12px;
+  }
+  .el-table tbody tr{
+    text-align: center;
+  }
+  .el-button{
+    width: auto!important;
+    padding: 5px 10px!important;
+    line-height: normal!important;
+    height: auto!important;
+  }
+  .el-form-item__label{
+    line-height: 28px!important;
+  }
+  .el-form-item__content{
+    line-height: 28px;
+  }
+  .el-cascader{
+    line-height: 27px;
+  }
+  .el-input{
+    input{
+      height: 28px;
+    }
+  }
+  .login-form-input{
+    .el-input{
+      input{
+        border: none
+      }
+    }
+  }
+}

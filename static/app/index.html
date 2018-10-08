@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分析统计</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/resest.css"/>
+		<script src="js/getUrl.js"></script>
+		<script type="text/javascript" src="js/phoneInteractive.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			
+			<span>实时动态</span>
+			<ul id="list_btn">						
+				<button typeT="DAY" class="active">今日</button>
+				<button typeT="WEEK">本周</button>
+				<button typeT="MONTH">本月</button>
+				<button typeT="YEAR">本年</button>
+			</ul>
+		<div id="content"> 
+			<ul id="con_list">
+				<!--<li><span>0</span>今日新增客户</li>
+				<li><span>0</span>今日接待客户</li>
+				<li><span>0</span>今日认筹</li>
+				<li><span>0</span>今日认购</li>
+				<li><span>0</span>今日签约</li>
+				<li><span>0</span>今日回款</li>-->
+			</ul>
+		</div>
+		</div>
+		<div class="action">
+			
+			<div id="box">
+					
+					<div id="ajaxbar1">					
+					  <div id="block1" class="barlittle"></div>
+					  <div id="block2" class="barlittle"></div>
+					  <div id="block3" class="barlittle"></div>
+					  <div id="block4" class="barlittle"></div>
+					  <div id="block5" class="barlittle"></div>
+					</div>
+					<div class="ajaxbarC">正在计算中 · · ·</div>
+			</div>
+			<span>统计分析</span>
+			<ul id="action_btn">
+				<button typeT="DAY" class="active">今日</button>
+				<button typeT="WEEK">本周</button>
+				<button typeT="MONTH">本月</button>
+				<button typeT="YEAR">本年</button>
+			</ul>
+			
+			<div class="action_nav">
+				<ul id="nav_btn">
+					<li class="hover"><span>客户分析</span></li>
+					<!--<li><span>销售分析</span></li>
+					<li><span>房源分析</span></li>-->
+				</ul>
+			</div>
+			<iframe id="iframes" src=""></iframe>
+		</div>
+			<div id="tod" style=" display: none;"> 
+				<div id="message">步骤22222</div>
+				<!-- <iframe src="http://10.100.26.150:8020/reportJsp/showReport.jsp?rpx=/statistical/appCustomerDemand.rpx"></iframe> -->
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(function(){
+				var curWwwPath = window.document.location.href;
+				var pathName =  window.document.location.pathname;  
+				var pos = curWwwPath.indexOf(pathName);  
+				var baseUrl = curWwwPath.substring(0,pos);/*初始化的方法*/
+				var message = document.getElementById('message')
+				message.innerHTML = '...' + baseUrl;
+
+				setTimeout(function(){
+					getData(baseUrl)
+				},50)
+			
+				$('#list_btn').on('click','button',function(){
+					console.log('11111')
+					
+					var message = document.getElementById('message')
+					message.innerHTML = '...' + $(this);
+					
+					$(this).addClass("active");
+					$(this).siblings("button").removeClass("active");
+					let type = $(this).attr('typeT')
+					// //获取报表
+					
+					
+					//获取动态数据
+					 $.ajax({ 
+						type : "GET",
+						dataType:"jsonp", 
+						beforeSend: function(request) {
+							request.setRequestHeader("Authorization", dataC.token);
+						},
+						url: baseUrl+'/api/sys/workbench/getDPNum',
+						data:{
+							'projectId':dataC.projectId,
+							'propertyConsultId':'',
+							'timeType':type
+						},
+						jsonpCallback:"jsonpCallback",
+			
+						success : function(data) {
+							//var result = JSON.stringify(data); //json对象转成字符串
+							//$("#text").val(result);receptionCustomCount
+							console.log('chengg',data)
+							var html = '<li><span>'+data.newCustomCount+'</span>新增客户</li>'
+							html += '<li><span>'+data.receptionCustomCount+'</span>接待客户</li>'
+							html += '<li><span>'+data.raiseCount+'</span>认筹</li>'
+							html += '<li><span>'+data.subscribeCount+'</span>认购</li>'
+							html += '<li><span>'+data.signCount+'</span>签约</li>'
+							html += '<li><span>'+data.returnMoneyCount+'</span>回款</li>'
+							console.log('html',html)
+							$('#con_list').html(html)
+						},
+						
+						error: function(res){
+							console.log("error",res); 
+						}
+					});
+                 
+
+				})
+				
+				
+				//统计分析
+				$('#action_btn').on('click','button',function(){
+					$("#box").css({'display':'block'})
+					var message = document.getElementById('message')
+					$(this).addClass("active")
+					$(this).siblings("button").removeClass("active")
+					let typeS = $(this).attr('typeT')
+					message.innerHTML='ddddd'+typeS
+					//获取当前时间戳
+					let datasTimeout = getServerDate()
+					//获取今天的时间
+					let dataB = new Date(datasTimeout);
+				    datasDay = dataB.getDate()
+				    datasMon = dataB.getMonth()+1
+				    datasYear = dataB.getFullYear()
+				    dataMM = datasYear+'-'+datasMon+'-'+datasDay
+					
+					
+					//获取今天加一天
+	                let  dataT = datasTimeout+24*60*60*1000               
+	                let data = new Date(dataT);
+	                
+					datasDayR = data.getDate()
+				    datasMonR = data.getMonth()+1
+				    datasYearR = data.getFullYear()
+				    dataMMend = datasYearR+'-'+datasMonR+'-'+datasDayR
+
+                if(typeS === 'DAY'){                  
+                    message.innerHTML='ddddd'+dataMMend   
+                   console.log('开始时间',dataMM,dataMMend)
+                   getUrl(baseUrl,dataMM,dataMMend)
+                }else if(typeS === 'WEEK'){                  
+                   let week = dataB.getDay();
+                    week = week === 0?7:week
+                    let Nowdate=new Date();     
+                     console.log('Nowdate',Nowdate)
+                      //console.log('WeekFirstDay',Nowdate.getDate())
+                    let WeekFirstDay=new Date(Nowdate-(week-1)*86400000); 
+                    console.log('WeekFirstDay',Nowdate.getDate())    
+                    let M=Number(WeekFirstDay.getMonth())+1     
+                    console.log('本周',Nowdate.getFullYear()+"-"+M+"-"+WeekFirstDay.getDate()) 
+                    this.stateTime = Nowdate.getFullYear()+"-"+M+"-"+WeekFirstDay.getDate()
+                    this.endTime = dataMMend
+                    console.log('week', this.stateTime,this.endTime)
+                    message.innerHTML='ddddd'+this.endTime
+					getUrl(baseUrl,this.stateTime,this.endTime)
+                    
+                }else if(typeS ==='MONTH'){
+                    let Nowdate=new Date();     
+                    let MonthFirstDay=new Date(Nowdate.getYear(),Nowdate.getMonth(),1);     
+                    let M=Number(MonthFirstDay.getMonth())+1     
+                    console.log('本月',Nowdate.getFullYear()+"-"+M+"-"+MonthFirstDay.getDate()) 
+                    this.stateTime = Nowdate.getFullYear()+"-"+M+"-"+MonthFirstDay.getDate()
+                    this.endTime = dataMMend
+                     console.log('今日开始时间',this.stateTime)
+                     message.innerHTML='ddddd'+this.endTime
+                   console.log('今日结束时间',this.endTime)
+                   getUrl(baseUrl,this.stateTime,this.endTime)
+                       
+                }else{
+                    let nowYear = data.getFullYear()
+                    this.stateTime = nowYear+'-1-1'
+                    this.endTime = dataMMend
+                     console.log('今日开始时间',this.stateTime)
+                   console.log('今日结束时间',this.endTime)
+                   message.innerHTML='ddddd'+this.endTime
+                   getUrl(baseUrl,this.stateTime,this.endTime)
+                    
+                }
+                 
+
+				})
+				
+				$('#iframes').load(function(){
+					$('#box').css({'display':'none'})
+				})
+					
+				
+				
+				
+			})
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,785 @@
+html, body, #app{
+    width: 100%;
+    height: 100%;
+}
+/********************element ui 部分***********************/
+/*********form表单**************/
+body .el-form-item__content{
+    font-size: 12px;
+    color:#404040;
+    line-height: 17px;
+}
+body .el-form-item__label{
+    font-size: 12px;
+    color: #404040;
+    line-height: 17px;
+}
+#mainPage .el-form-item {
+    margin-bottom: 18px;
+    font-size: 12px;
+    width: 100%;
+}
+#mainPage #editorProject .el-form-item {
+    width: initial;
+}
+#mainPage #newProject .el-form-item {
+    width: initial;
+}
+#mainPage .noMargin .el-form-item {
+  margin-bottom: 0px;
+  font-size: 12px;
+  width: 100%;
+}
+
+#mainPage .Paddingright1 .el-form-item__label{
+  padding: 0 1px 0 0;
+}
+
+#mainPage .el-form--inline .el-form-item{
+    width:auto;
+}
+#contract .el-form--inline .el-form-item{
+    margin-right: 0;
+}
+/****************开发可选input label 及输入文字内容行高********************/
+#mainPage .line_height26 .el-form-item__label{
+    line-height: 26px;
+}
+#mainPage .line_height26 .el-form-item__content{
+  line-height: 26px;
+}
+#mainPage .line_height17 .el-form-item__label{
+    line-height: 17px;
+}
+
+#mainPage .line_height17 .el-form-item__content{
+    line-height: 17px;
+}
+#mainPage .line_height28 .el-form-item__label{
+    line-height: 28px;
+}
+#mainPage .line_height28 .el-form-item__content{
+    line-height: 28px;
+     height: 28px;
+}
+
+/***********分页当前页码***********/
+#mainPage .el-pager li.active {
+    color: #4DBE61;
+    cursor: default;
+  }
+/**********dialog************/
+#mainPage .el-dialog__title {
+    line-height: 24px;
+    font-size: 14px;
+    color: #666;
+  }
+
+#mainPage .paddingTop20 .el-dialog__body{
+  padding: 20px 20px;
+  color: #606266;
+  line-height: 24px;
+  font-size: 14px;
+}
+body .el-dialog__title {
+    line-height: 24px;
+    font-size: 14px;
+    color: #666;
+}
+  /***dialog弹框关闭按钮颜色**/
+  #mainPage .el-dialog__headerbtn .el-dialog__close:hover{
+    color: #4DBE61;
+}
+body .el-dialog__headerbtn .el-dialog__close:hover{
+    color: #4DBE61;
+}
+/********dialog弹框内button鼠标移入效果颜色*******/
+#mainPage .dialog-footer .el-button:focus, #mainPage .dialog-footer .el-button:hover, #mainPage .card_button .el-button:hover{
+    color: #4DBE61;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+body .dialog-footer .el-button:focus, body .dialog-footer .el-button:hover, body .card_button .el-button:hover{
+    color: #4DBE61;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+/**********树状控件***********/
+#mainPage .el-tree{
+    color: #404040;
+    font-size: 12px;
+    background: #fff;
+}
+
+#mainPage .el-tree-node__label{
+    font-size: 12px;
+}
+
+/*******树节点选中颜色*********/
+#mainPage .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+  background-color: #d8e4f7;
+}
+
+/**********input***********/
+#mainPage .el-input input{
+    height: 28px;
+    line-height:26px;
+    max-width: 174px;
+    font-size: 12px;
+}
+#mainPage .bankB .el-input input{
+
+    max-width: 300px;
+
+}
+/* #mainPage #interfaceFormat .el-form-item{
+    margin-bottom: 0;
+}
+#mainPage #interfaceFormat .el-input{
+    min-width: 300px;
+    max-width: initial;
+}
+#mainPage #interfaceFormat .el-input input{
+    max-width: 100%
+} */
+body .el-input{
+    height: 28px;
+    max-width: 174px;
+    font-size: 12px;
+}
+body .bankB .el-input{
+    width: 300px;
+    max-width: 300px!important;
+
+}
+body .el-input input{
+    height: 28px;
+    max-width: 174px;
+    font-size: 12px;
+}
+body .bankB .el-input input{
+    width: 300px;
+    max-width: 300px;
+}
+.login-box .el-input{
+    max-width: 100%;
+    height: 40px;
+}
+.login-box .el-input input{
+    max-width: 100%;
+    height: 40px;
+}
+body .el-input__inner{
+    height: 28px;
+}
+body .el-date-editor .el-range-separator{
+    line-height: 21px;
+}
+body .el-date-editor .el-range-input, body .el-date-editor .el-range-separator{
+    font-size: 12px;
+}
+body .el-date-editor .el-range__icon,body .el-date-editor .el-range__close-icon{
+    line-height: 23px!important;
+    height: 100%!important;
+}
+#mainPage .el-textarea__inner{
+    font-size: 12px;
+    height: 29px;
+    line-height: 17px;
+    font-family: PingFangSC-Regular;
+}
+#mainPage .el-input__icon{
+    height: 28px;
+    line-height: 17px;
+}
+body .icon_text{
+    font-style: normal;
+    margin-right: 10px;
+}
+#mainPage .el-input .el-input__inner:focus {
+    border-color: #4DBE61;
+}
+#mainPage input::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: 12px;
+}
+#mainPage input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: 12px;
+}
+#mainPage input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: 12px;
+}
+#mainPage input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-size: 12px;
+}
+/*******button********/
+#mainPage .el-button{
+    padding: 0;
+    width: 78px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+}
+body .el-button{
+    padding: 0;
+    width: 78px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+}
+#mainPage .el-button.el-button--success{
+    background: #4DBE61;
+    border-color: #4DBE61;
+}
+body .el-button.el-button--success{
+    background: #4DBE61;
+    border-color: #4DBE61;
+}
+#mainPage .el-button--primary {
+    color: #fff;
+    background-color: #4DBE61;
+    border-color: #4DBE61;
+  }
+#mainPage .el-button--text.el-button{
+    color: #4DBE61;
+}
+#mainPage .el-button--text span{
+    font-weight: normal;
+}
+#mainPage .el-button.el-button--text:hover{
+    color: #4DBE61;
+    border-color: transparent;
+    background-color: transparent;
+}
+#mainPage .el-button:hover{
+    color: #4DBE61;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+#mainPage .el-button.el-button--success:hover{
+    color: #fff;
+    border-color: #4DBE61;
+    background-color: #4DBE61;
+}
+#mainPage .el-button.el-button--primary:hover{
+    color: #fff;
+    border-color: #4DBE61;
+    background-color: #4DBE61;
+}
+#mainPage .el-button.el-button--primary:hover span{
+    color: #fff;
+}
+#mainPage .el-button.el-button--success:hover span{
+    color: #fff;
+}
+#mainPage .el-button.el-button--primary.is-plain{
+    color: #4DBE61;
+    background: #ecf5ff;
+    border-color: #b3ffc6;
+}
+#mainPage .el-button a{
+    text-decoration: none;
+    color: #fff;
+}
+#mainPage .right_bottom_btn_wrap{
+    position: relative;
+}
+#mainPage .right_bottom_btn_wrap .right_bottom_btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#login-btn{
+    height: 40px;
+}
+/********select选择栏选中状态的颜色********/
+body .el-select-dropdown__item.selected {
+    color: #4DBE61;
+}
+body .el-select-dropdown__item{
+    font-size: 12px;
+}
+/********级联选择器选中状态颜色***********/
+body .el-cascader-menu__item.is-active{
+    color: #4DBE61;
+}
+/*******checkbox选中状态颜色****/
+#mainPage .el-checkbox__input.is-checked .el-checkbox__inner, #mainPage .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background-color: #4DBE61;
+    border-color: #4DBE61;
+}
+body .el-checkbox__input.is-checked .el-checkbox__inner, body .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background-color: #4DBE61;
+    border-color: #4DBE61;
+}
+/********警告提示框button颜色**********/
+body .el-button.el-button--primary{
+    color: #fff;
+    background-color: #4DBE61!important;
+    border-color: #4DBE61!important;
+}
+body .el-button.el-button--primary:hover{
+    background-color: #4DBE61;
+    border-color: #4DBE61;
+}
+body .el-button:hover{
+    color: #4DBE61;
+    border-color: #4DBE61;
+    background-color: #ccf0d2;
+}
+body .el-button.el-button--primary:hover{
+    color:#fff;
+}
+body .el-button.el-button--success:hover{
+    color:#fff;
+}
+/**********单选框选中状态颜色*********/
+#mainPage .el-radio__input.is-checked .el-radio__inner{
+    border-color: #4DBE61;
+    background: #4DBE61;
+}
+/***********卡片头部样式***********/
+body .el-card{
+    -webkit-box-shadow: 0px 1px 2px #e5e5e5;
+    box-shadow: 0px 1px 2px #e5e5e5;
+    border: 1px solid #e5e5e5;
+}
+#mainPage .el-card.margin_bottom20{
+    margin-bottom: 20px;
+}
+body .el-card__header{
+    padding: 0px 25px;
+    height: 40px;
+    line-height: 40px;
+}
+body .el-card__body{
+    font-size: 12px;
+}
+body .el-card__header span.title{
+    font-weight: 900;
+    color: #404040;
+    font-size: 14px;
+    float: left;
+}
+
+#mainPage .update_date{
+    font-size: 12px;
+    color: #666666;
+}
+#mainPage .update_date span{
+    color: #404040;
+}
+#mainPage .nopadding .el-card__body{/***卡片内padding为0****/
+    padding: 0;
+}
+/***********radio-button*************/
+#mainPage .el-radio-button__inner{
+    padding: 0;
+    font-size: 12px;
+    min-width: 78px;
+    padding:0 10px;
+    height: 28px;
+    line-height: 28px;
+}
+#mainPage .el-radio-button__inner:hover{
+    color: #4DBE61;
+}
+#mainPage .is-active .el-radio-button__inner:hover{
+    color: #fff;
+}
+#mainPage .el-radio-button__orig-radio:checked+.el-radio-button__inner{
+    background-color: #4DBE61;
+    border-color: #4DBE61;
+    -webkit-box-shadow: -1px 0 0 0 #4DBE61;
+    box-shadow: -1px 0 0 0 #4DBE61;
+}
+#mainPage .el-radio-button:focus,#mainPage  .el-radio-button__inner:focus{
+    border-color: #4DBE61;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+#mainPage .el-radio__label {
+  font-size: 12px;
+  padding-left: 5px;
+}
+.el-radio__input.is-checked+.el-radio__label{
+  color:#4DBE61!important;
+}
+
+#mainPage .el-radio {
+  color: #808080;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  outline: 0;
+}
+/*********table**************/
+body .el-table{
+    color: #404040;
+    font-size: 12px;
+}
+body .el-table__header .cell{
+    color: #404040;
+    text-align: center;
+    font-size: 12px;
+}
+body .el-table .cell{
+    white-space: nowrap;
+    text-align: center;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+body .follow-up-record .el-table .cell{
+    white-space: pre-wrap;
+    line-height: 24px;
+}
+body .el-table tr{
+    height: 40px;
+}
+#price .el-table tbody tr{
+    text-align: center;
+}
+body .el-table th{
+    padding: 0;
+}
+body .el-table td{
+    padding: 0;
+}
+body .el-table .gutter{
+    display: table-cell!important;
+}
+body .el-table th.gutter{
+    display: table-cell!important;
+}
+/* body .el-table__body{
+    table-layout:auto !important;
+} */
+body .el-table__body-wrapper {
+    margin-top: 1px!important;
+}
+body .el-table::before {
+    z-index: inherit;
+}
+#receivable .canClickHouseName .cell span{
+	color: green;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/**********导航侧边栏************/
+#mainPage .el-submenu .el-menu-item {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 45px;
+}
+
+#mainPage .el-submenu .el-menu-item .el-submenu__title{
+    height: 40px;
+  line-height: 40px;
+}
+.leftMenu .el-submenu__title{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left:17px!important;
+}
+/********左侧边栏********/
+#mainPage .el-menu-item, .el-submenu__title {
+  height: 40px;
+  line-height: 56px;
+  padding: 0 20px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 40px;
+  /* margin-bottom: 20px; */
+}
+/***********tab控件**********/
+body .el-tabs__item.is-active {
+    color: #4DBE61;
+}
+body .el-tabs__item:hover {
+    color: #4DBE61;
+}
+/***********下拉菜单************/
+body .el-dropdown-menu__item{
+    font-size: 12px;
+}
+body .el-dropdown-menu__item:focus,body .el-dropdown-menu__item:not(.is-disabled):hover{
+    background-color:#ecf5ff;
+    color:#4DBE61;
+}
+body .titleNav {
+    border-bottom: 0!important;
+}
+/***********分页***********/
+body .el-pagination{
+    text-align: center;
+    margin-top: 20px;
+}
+/***************/
+body .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active{
+    color: #4DBE61
+}
+/*********级联***********/
+body .el-cascader__label{
+    font-size: 12px;
+}
+body .el-collapse-item__arrow{
+    line-height: 48px!important;
+}
+body .el-submenu [class^=el-icon-] {
+    margin-right: 0px;
+}
+/********************非element ui 部分***************************/
+
+/********标题样式********/
+.standardTitle{
+  font-size: 14px;
+  color: #404040;
+}
+
+/********正文样式*******/
+.standardText{
+  font-size: 12px;
+  color: #404040;
+}
+
+/********边框*********/
+.standardBorder{
+  border: 1px solid #E5E5E5;
+}
+
+/********时间选择框***********/
+#mainPage .el-date-editor.el-input, .el-date-editor.el-input__inner{
+  width: 174px;
+}
+
+/********布局框阴影*********/
+#mainPage .divShadow{
+  box-shadow: 0px 1px 2px #e5e5e5;
+}
+/*************面包屑hover效果重置***********/
+ #transaction .el-breadcrumb__inner:hover{color: #000000!important;cursor: text}
+
+/**************房源查询table样式修改**************/
+#transaction .el-table .cell{
+	line-height: 40px;
+}
+#transaction .el-table td,#houseQuery .el-table th{
+	padding: 0;
+}
+#transaction .el-table--border .has-gutter td:nth-last-of-type(2),#houseQuery .el-table--border .has-gutter th:nth-last-of-type(2) {
+    border-right: 1px solid #ebeef5;;
+}
+#pushPlate .el-table td, .el-table th{
+    padding: 0;
+}
+body .table_houseName .cell{
+    white-space: normal!important;
+}
+/***********height100%*************/
+#mainPage .height100{
+    height: 100%;
+}
+/*强制样式修改*/
+.borderCard .el-col-12{
+    border: 1px solid #e5e5e5;
+    padding: 12px;
+    box-sizing: border-box;
+    min-height: 72px;
+}
+.noborderCard .el-col-12{
+    padding: 12px;
+    box-sizing: border-box;
+    height: 72px;
+}
+.logo,.nav_right{
+  outline:none!important;
+}
+.cancel-lee:hover{
+  border:solid thin #4DBE61!important;
+  color:#4DBE61!important;
+  background-color:#a5cc995c!important;
+}
+.cancel-lee:active{
+  border:solid thin #dcdfe6!important;
+  color: #606266!important;
+  background-color:#fff!important;
+}
+.cancel-lee:focus{
+  border:solid thin #dcdfe6!important;
+  color: #606266!important;
+  background-color:#fff!important;
+}
+.el-upload-list__item-name:hover{
+  color:#4DBE61!important;
+  cursor:pointer!important;
+}
+.mainBtn_:hover{
+  color: #4DBE61!important;
+  border-color: #4DBE61!important;
+  background-color: #ccf0d2!important;
+}
+.mainBtn_:focus{
+  background: #fff!important;
+  border: 1px solid #dcdfe6!important;
+  color: #606266!important;
+}
+.mainBtn_:active{
+  background: #fff!important;
+  border: 1px solid #dcdfe6!important;
+  color: #606266!important;
+}
+.el-menu-item [class^=el-icon-]{
+  font-size: 20px!important;
+  vertical-align:middle;
+}
+.el-textarea__inner:focus{
+  outline:0;
+  border-color:#4DBE61!important;
+}
+.el-input.is-active .el-input__inner, .el-input__inner:focus{
+  border-color: #4dbe61!important;
+}
+[class*=" el-icon-"], [class^=el-icon-]{
+  line-height:1!important;
+}
+#queryVoucher .el-table td, .el-table th{
+  padding:0;
+}
+
+#balancePay .inputControl-long .el-input__inner{
+  min-width:370px!important;
+}
+#fnCheck .inputControl-long .el-input__inner {
+  min-width: 370px !important;
+}
+#transacc .inputControl-long .el-input__inner {
+  min-width:250px!important;
+}
+/*.print-demo .el-dialog{
+  position:fixed!important;
+  top:-30px!important;
+  left:25%;
+}*/
+
+body .el-icon-nav-xiaofangzi{
+    position: absolute;
+    font-size: 24px;
+    left:10px;
+    top: -5px;
+}
+body .el-icon-nav-xiaofangzi.bottom_icon{
+    position: static;
+    font-size: 32px;
+    float: left;
+    /* top: -4px;
+    left: -11px; */
+}
+body #houseQuery .el-table {
+    color: #404040;
+    font-size: 14px;
+}
+body #houseQuery .el-table th{
+    padding:0;
+  }
+.ml-100 .el-form-item__label{
+  width:100px;
+}
+.ml-100 .el-form-item__content{
+  margin-left:100px;
+}
+#projectDailySheet .el-radio-group{
+  margin-top:13px;
+}
+#projectSalesDaily .el-radio-group{
+  margin-top:13px;
+}
+#compare .demo-ruleForm .el-checkbox-group{
+  display:inline-block;
+  margin-left:20px;
+}
+body .canWrapCell .cell{
+    white-space: normal!important;
+}
+#showHouseInfo .el-form-item{
+    margin-bottom: 8px
+}
+#showHouseInfo .el-form-item .el-form-item__label{
+    padding-right: 5px;
+}
+#buildVoucher .el-input input{
+  height:28px!important;
+}
+#buildVoucher .long-input .el-input__inner{
+  max-width:300px!important;
+  width:300px;
+}
+#queryVoucher .el-input input{
+  height:28px!important;
+}
+body .cellItem{
+    position: relative;
+}
+#mainPage .el-input input{
+  box-shadow:none;
+}
+.el-submenu__title:hover{background-color: transparent}
+#mainPage .el-menu-item:hover{background-color: transparent}
+#mainPage .el-menu-item:active{background-color: transparent}
+#mainPage .el-menu-item:focus{background-color: transparent}
+.bank-reset-width .el-input{
+  max-width:300px;
+  width:275px;
+}
+.bank-reset-width .el-input__inner{
+  max-width:300px!important;
+  width:275px!important;
+}
+#fnCheck .w130{
+  max-width:130px!important;
+  width:130px!important;
+}
+.el-dialog__wrapper{
+  position: -ms-page!important;
+}
+.el-main{
+  display:inline-block;
+}
+.el-input--suffix .el-input__inner{
+  line-height: 28px;
+}
+body .el-form-item__label{
+  line-height: 28px;
+}
+.projectDailySheet .el-input{
+    height: inherit;
+}
+#mainPage .projectDailySheet .el-input input{
+    height: 40px;
+}
+#mainPage .projectDailySheet .el-form-item__label{
+    line-height: 40px !important;
+}
+#mainPage .projectDailySheet .el-form-item__content{
+    line-height: 40px !important;
+}
+body .el-select-dropdown.is-multiple .el-select-dropdown__item.selected{
+    color: #4DBE61;
+}
+body .el-select .el-input.is-focus .el-input__inner {
+    border-color: #4DBE61;
+}
+
+
+#GroupControlPeriod .el-table--border td, .el-table--border th {
+    border-right: 1px solid #E9E9E9!important;
+}
+
+#GroupControlPeriod .el-table td, .el-table th.is-leaf {
+    border-bottom: 1px solid #E9E9E9!important;
+}

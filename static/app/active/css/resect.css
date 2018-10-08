@@ -1,0 +1,97 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, cite, em, font, img, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {margin: 0; padding: 0}
+body{background-color:#f6f6f6}
+ol, ul {list-style: none}
+i,em,cite{font-style: normal}
+a img {border: 0}
+a{text-decoration:none}
+img {vertical-align: middle}
+em {font-style: normal}
+.ov-hide{overflow:hidden}
+.fl{float:left}
+.fr{float:right}
+.text-red{color:#d40000}
+
+body{
+	background: white!important;
+}
+.mui-content{
+	background: white!important;
+}
+.img{
+	margin-top: 7rem;
+	height: 19rem;
+	text-align: center;
+}
+.img img{
+	
+	height: 8rem;
+	
+}
+.start{
+	height: 17rem;
+	text-align: center;
+}
+.top{
+	height: 5rem;
+    width: 66%;
+    display: flex;
+    position: relative;
+    left: 50%;
+    margin-left: -22%;
+}
+.top span{
+	display: inline-block;
+	line-height: 5.5rem;
+}
+.top ul{
+	flex: 1;
+}
+
+.top ul img{
+	float: left;
+	margin-top: 1.8rem;
+	line-height: 5rem;
+}
+.top ul img{
+	height: 1.5rem;
+}
+#btn button{
+	width: 18rem;
+	height: 3.4rem;
+	background:#4DBE61;
+	color: white!important;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+}
+.name{
+	font-size: 17px;
+	font-weight: 550;
+	margin-top: 2rem;
+}
+.project{
+	color: #808080;
+	font-size: 13px;
+}
+.success{
+	position: absolute;
+	height: 5rem;
+	width: 5rem;
+	left: 50%;
+	top: 50%;
+	margin-left: -2.5rem;
+	margin-top: -2.5rem;
+	text-align: center;
+	color: #25AE50;
+	font-size: 15px;
+}
+
+.imgs img{
+	height: 5rem;
+}
+.start{
+	outline: none;
+}
+.start img {
+	outline: none;
+}
